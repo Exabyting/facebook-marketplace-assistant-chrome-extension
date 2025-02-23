@@ -1,0 +1,19 @@
+services:
+
+  backend:
+    container_name: backend
+    networks:
+      - backendNetwork
+    image: node:20-buster-slim
+    volumes:
+      - ./:/app
+    ports:
+      - "3001:3001"
+    working_dir: /app
+    env_file:
+      - .env
+    command: sh -c "npm install --verbose && npm run start && sleep infinity"
+
+networks:
+  backendNetwork:
+    driver: bridge
