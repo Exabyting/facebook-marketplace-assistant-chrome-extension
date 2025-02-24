@@ -1,0 +1,26 @@
+body {
+  width: 800px;
+  background-color: aliceblue;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableContainer {
+  margin: 2rem 1rem;
+}
+
+.table {
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* .table th,
+.table td {
+  vertical-align: middle;
+  text-align: left;
+} */
